@@ -17,3 +17,286 @@ section,
 button {
     font-family: inherit;
 }
+
+/* common */
+.section__title {
+    position: relative;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding-left: 30px;
+}
+
+.section__title::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.section__desc {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.btn {
+    --height: 52px;
+
+    color: #fff;
+    min-width: 113px;
+    text-align: center;
+    height: var(--height);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: var(--height);
+    border-radius: 6px;
+    background: #212832;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    padding: 34px 0 8px;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    margin-left: 70px;
+}
+.nav__item {
+    padding: 0 23px;
+}
+.nav__link {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.nav__link.active {
+    color: #212832;
+    font-weight: 600;
+    border-bottom: 2px solid #7264d6;
+}
+
+.nav__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #212832;
+}
+.header__action {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header__login {
+    color: #212832;
+    padding: 0 28px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+/* hero */
+.hero {
+    padding: 68px 0 80px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+}
+.hero__content {
+    width: 46%;
+}
+
+.hero__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero__heading-strong {
+    color: #7264d6;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+.subscribe-form {
+    margin-top: 40px;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    position: relative;
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+    font-size: 1.6rem;
+    padding: 0 165px 0 23px;
+}
+
+.subscribe-form__input::placeholder {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.subscribe-form__btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    min-width: 149px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7264d6;
+    border-radius: 8px;
+    background: #7264d6;
+}
+
+.hero__reminder {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+.hero__media {
+    position: relative;
+    width: 54%;
+}
+
+.hero__media-img {
+    width: 296px;
+    height: 562px;
+    margin-left: 160px;
+}
+
+.hero__card-deposite {
+    position: absolute;
+    left: 60px;
+    top: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 174px;
+    height: 46px;
+    padding: 16px 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__card-title {
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    padding-left: 26px;
+}
+
+.hero__card-deposite .hero__card-title::before {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: url(../icon/hero_download.svg);
+}
+
+.hero__card-price {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero__card-secured {
+    position: absolute;
+    bottom: 66px;
+    right: 100px;
+    padding: 20px 14px;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+}
+.hero__card__price {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.hero__card-title-secured {
+    display: flex;
+    padding-left: 31px;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero__card-secured .hero__card-title-secured::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: url(../icon/hero_dollar.svg);
+}
+
+.hero__card {
+    position: absolute;
+    right: 0;
+    top: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+}
+.hero__card-qty {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+.hero__card-desc {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
