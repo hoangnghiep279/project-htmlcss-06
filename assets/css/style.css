@@ -28,6 +28,13 @@ button {
     padding-left: 30px;
 }
 
+.section__heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
 .section__title::before {
     position: absolute;
     left: 0;
@@ -48,7 +55,7 @@ button {
 }
 .btn {
     --height: 52px;
-
+    display: inline-block;
     color: #fff;
     min-width: 113px;
     text-align: center;
@@ -289,6 +296,18 @@ a {
     height: 130px;
     border-radius: 50%;
     background: #da6464;
+    animation: toLeft 5s infinite;
+}
+@keyframes toLeft {
+    0% {
+        translate: 0;
+    }
+    50% {
+        translate: -42px;
+    }
+    100% {
+        translate: 0;
+    }
 }
 .hero__card-qty {
     color: #fff;
@@ -299,4 +318,246 @@ a {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 400;
+}
+
+/* works */
+.works {
+    padding: 80px 0;
+}
+
+.work__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work__media {
+    width: 470px;
+    position: relative;
+}
+.work__decor {
+    position: absolute;
+    right: 55px;
+    top: 76px;
+}
+
+.work-card {
+    position: absolute;
+    right: -100px;
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.work-card__info {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.work-card__desc {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.work__img {
+    width: 100%;
+}
+.work__tagline,
+.work__desc {
+    width: 470px;
+}
+
+.work__tagline:nth-of-type(1) {
+    margin-top: 70px;
+}
+
+.work__tagline {
+    margin-top: 30px;
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.work__desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+/* product */
+.product {
+    padding: 80px 0;
+}
+
+.product__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 160px;
+}
+.product__heading {
+    margin-top: 12px;
+}
+.product__desc {
+    margin-top: 20px;
+    width: 470px;
+}
+
+.product__list {
+    margin-top: 28px;
+}
+
+.product__item {
+    margin-bottom: 18px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.product__item::before {
+    margin-right: 12px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.product__btn {
+    --height: 58px;
+    min-width: 149px;
+    margin-top: 38px;
+}
+
+.product__media {
+    position: relative;
+}
+.product__img {
+    width: 80%;
+}
+
+.product__payment {
+    position: absolute;
+    right: 0;
+    top: -45px;
+    padding: 23px 13px;
+    display: flex;
+    align-items: center;
+    width: 276px;
+    height: 86px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+.product__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__column:nth-child(3) {
+    margin-left: auto;
+}
+.product__payment-title {
+    color: #212832;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.product__payment-price {
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.product__payment-desc {
+    margin-top: 4px;
+    color: #696d76;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.product__media-card {
+    position: absolute;
+    right: 15px;
+    bottom: -55px;
+    padding: 14px 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+}
+.product__media-card-desc {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.product__media-card-price {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.product__decor {
+    position: absolute;
+    z-index: 2;
+    right: -35px;
+    bottom: 172px;
+}
+/* media-2 */
+.product__payment-method {
+    position: absolute;
+    right: 27px;
+    bottom: 57px;
+    z-index: 1;
+    padding: 28px;
+    width: 281px;
+    background: #fff;
+    height: 220px;
+    box-shadow: 0px 44px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.product__payment-method__heading {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+.product__paymethod-image {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 18px;
+}
+.product__paymethod-img {
+    width: 100%;
+    height: 100%;
+}
+
+.product__paymethod-link:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 48px;
+    background: #f9ea63;
+}
+.product__content-bottom {
+    margin-left: auto;
+    width: 470px;
 }
