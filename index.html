@@ -93,6 +93,12 @@
         />
         <!-- style.css -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="header">
@@ -192,7 +198,11 @@
             <section class="works">
                 <div class="container">
                     <div class="work__inner">
-                        <div class="work__media">
+                        <div
+                            class="work__media"
+                            data-aos="zoom-in-right"
+                            data-aos-duration="1000"
+                        >
                             <figure class="work__img-wrap">
                                 <img
                                     src="./assets/img/product__img-1.png"
@@ -278,7 +288,12 @@
                                 >Get Started</a
                             >
                         </section>
-                        <div class="product__media">
+                        <div
+                            class="product__media"
+                            data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                        >
                             <figure class="product__img-wrap">
                                 <img
                                     src="./assets/img/payment_card.png"
@@ -316,7 +331,11 @@
                                 <p class="product__media-card-price">$1250</p>
                             </div>
                         </div>
-                        <div class="product__media">
+                        <div
+                            class="product__media"
+                            data-aos="fade-up-left"
+                            data-aos-duration="1000"
+                        >
                             <figure class="product__img-wrap">
                                 <img
                                     src="./assets/img/product__img-2.png"
@@ -442,13 +461,18 @@
                         <div class="feedback__top">
                             <p class="section__title">Our Testimonial</p>
                             <h2 class="section__heading">What Clients Says</h2>
-                            <p class="section__desc">
+                            <p class="section__desc feedback__desc">
                                 Read what clients says about us and about our
                                 online banking services that may inspire you
                             </p>
                         </div>
                         <div class="feedback__list">
-                            <article class="feedback-item">
+                            <article
+                                class="feedback-item"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                            >
                                 <div class="feedback-item__desc-wrap">
                                     <p class="feedback-item__desc">
                                         Fantastic platform for online banking.
@@ -466,6 +490,95 @@
                                 />
                                 <h3 class="feedback-item__name">
                                     Alastair Cook
+                                </h3>
+                                <p class="feedback-item__job">Businessmen</p>
+                            </article>
+                            <article
+                                class="feedback-item"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                            >
+                                <div class="feedback-item__desc-wrap">
+                                    <p class="feedback-item__desc">
+                                        Fantastic platform for online banking.
+                                        The best online banking platform I have
+                                        used. Payments, loans, and money
+                                        transfers have never been so much easier
+                                        before. I am very much happy about this
+                                        great online bank.
+                                    </p>
+                                </div>
+                                <img
+                                    src="./assets/img/feedback-avatar-02.png"
+                                    alt=""
+                                    class="feedback-item__avatar"
+                                />
+                                <h3 class="feedback-item__name">
+                                    Alastair Foaks
+                                </h3>
+                                <p class="feedback-item__job">Businessmen</p>
+                            </article>
+                            <article class="feedback-item">
+                                <div class="feedback-item__desc-wrap">
+                                    <p class="feedback-item__desc">
+                                        Fantastic platform for online banking.
+                                        The best online banking platform I have
+                                        used. Payments, loans, and money
+                                        transfers have never been so much easier
+                                        before. I am very much happy about this
+                                        great online bank.
+                                    </p>
+                                </div>
+                                <img
+                                    src="./assets/img/feedback-avatar-02.png"
+                                    alt=""
+                                    class="feedback-item__avatar"
+                                />
+                                <h3 class="feedback-item__name">
+                                    Alastair Foaks
+                                </h3>
+                                <p class="feedback-item__job">Businessmen</p>
+                            </article>
+                            <article class="feedback-item">
+                                <div class="feedback-item__desc-wrap">
+                                    <p class="feedback-item__desc">
+                                        Fantastic platform for online banking.
+                                        The best online banking platform I have
+                                        used. Payments, loans, and money
+                                        transfers have never been so much easier
+                                        before. I am very much happy about this
+                                        great online bank.
+                                    </p>
+                                </div>
+                                <img
+                                    src="./assets/img/feedback-avatar-02.png"
+                                    alt=""
+                                    class="feedback-item__avatar"
+                                />
+                                <h3 class="feedback-item__name">
+                                    Alastair Foaks
+                                </h3>
+                                <p class="feedback-item__job">Businessmen</p>
+                            </article>
+                            <article class="feedback-item">
+                                <div class="feedback-item__desc-wrap">
+                                    <p class="feedback-item__desc">
+                                        Fantastic platform for online banking.
+                                        The best online banking platform I have
+                                        used. Payments, loans, and money
+                                        transfers have never been so much easier
+                                        before. I am very much happy about this
+                                        great online bank.
+                                    </p>
+                                </div>
+                                <img
+                                    src="./assets/img/feedback-avatar-02.png"
+                                    alt=""
+                                    class="feedback-item__avatar"
+                                />
+                                <h3 class="feedback-item__name">
+                                    Alastair Foaks
                                 </h3>
                                 <p class="feedback-item__job">Businessmen</p>
                             </article>
@@ -493,7 +606,252 @@
                         </div>
                     </div>
                 </div>
+                <div class="feedback__dots">
+                    <div class="feedback__dot feedback__dot-active"></div>
+                    <div class="feedback__dot"></div>
+                    <div class="feedback__dot"></div>
+                </div>
+            </section>
+
+            <!-- blog -->
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__top">
+                        <div class="blog__info">
+                            <p class="section__title">Our Blog</p>
+                            <h2 class="section__heading blog__heading">
+                                Get The Updates
+                            </h2>
+                            <p class="section__desc blog__desc">
+                                Read our blog for the regular updates about us
+                                and about our online banking services that may
+                                inspire you
+                            </p>
+                        </div>
+                        <a href="#!" class="btn blog__btn">Read blog</a>
+                    </div>
+
+                    <div class="blog__list">
+                        <article class="blog-item">
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/blog-img-01.png"
+                                    alt=""
+                                    class="blog-item__img"
+                            /></a>
+                            <div class="blog-item__info">
+                                <p class="blog-item__date">July 03, 2022</p>
+                                <h3>
+                                    <a class="blog-item__heading" href="#!"
+                                        >Online bank is the best and secure way
+                                        to save in the future...
+                                    </a>
+                                </h3>
+                                <a href="#!" class="blog-item__cta"
+                                    >Read Blog</a
+                                >
+                            </div>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/blog-img-02.png"
+                                    alt=""
+                                    class="blog-item__img"
+                            /></a>
+                            <div class="blog-item__info">
+                                <p class="blog-item__date">July 03, 2022</p>
+                                <h3>
+                                    <a class="blog-item__heading" href="#!">
+                                        Why do you need to open a bank account
+                                        in online..
+                                    </a>
+                                </h3>
+                                <a href="#!" class="blog-item__cta"
+                                    >Read Blog</a
+                                >
+                            </div>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/blog-img-03.png"
+                                    alt=""
+                                    class="blog-item__img"
+                            /></a>
+                            <div class="blog-item__info">
+                                <p class="blog-item__date">July 03, 2022</p>
+                                <h3>
+                                    <a class="blog-item__heading" href="#!">
+                                        The benefits that we get from credit
+                                        card at anytime...
+                                    </a>
+                                </h3>
+                                <a href="#!" class="blog-item__cta"
+                                    >Read Blog</a
+                                >
+                            </div>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/blog-img-04.png"
+                                    alt=""
+                                    class="blog-item__img"
+                            /></a>
+                            <div class="blog-item__info">
+                                <p class="blog-item__date">July 03, 2022</p>
+                                <h3>
+                                    <a class="blog-item__heading" href="#!">
+                                        How to manage your money in online in
+                                        this busy days...
+                                    </a>
+                                </h3>
+                                <a href="#!" class="blog-item__cta"
+                                    >Read Blog</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="install">
+                <div class="container">
+                    <div class="install__inner">
+                        <p class="section__title install__title">Our App</p>
+                        <h2 class="section__heading install__heading">
+                            Download the Apps
+                        </h2>
+                        <p class="section__desc install__desc">
+                            Download our mobile apps and get started today with
+                            a special online bank and move faster
+                        </p>
+                        <div class="install__row">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/install__googleplay.png"
+                                    alt=""
+                                    class="install_img-btn"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/install__appstore.png"
+                                    alt=""
+                                    class="install_img-btn"
+                                />
+                            </a>
+                        </div>
+                        <img
+                            src="./assets/img/install-star.svg"
+                            alt=""
+                            class="install__decor"
+                        />
+                        <img
+                            src="./assets/img/install-star.svg"
+                            alt=""
+                            class="install__decor"
+                        />
+                        <img
+                            src="./assets/img/install-star.svg"
+                            alt=""
+                            class="install__decor"
+                        />
+                        <img
+                            src="./assets/img/install-star.svg"
+                            alt=""
+                            class="install__decor"
+                        />
+                    </div>
+                </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <a href="#">
+                            <img
+                                src="./assets/img/Logo.svg"
+                                alt=""
+                                class="footer__logo"
+                            />
+                        </a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__heading">Sitemap</h3>
+                        <ul class="footer__list">
+                            <li>
+                                <a class="footer-item" href="#!">Home </a>
+                            </li>
+                            <li>
+                                <a class="footer-item" href="#!">Abouts</a>
+                            </li>
+                            <li>
+                                <a class="footer-item" href="#!">Growers</a>
+                            </li>
+                            <li>
+                                <a class="footer-item" href="#!">Merchants</a>
+                            </li>
+                            <li>
+                                <a class="footer-item" href="#!">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__heading">Socials</h3>
+                        <ul class="footer__list">
+                            <li>
+                                <a class="footer-item" href="#!">Facebook </a>
+                            </li>
+                            <li>
+                                <a class="footer-item" href="#!">Linkedin</a>
+                            </li>
+                            <li>
+                                <a class="footer-item" href="#!">Instagram</a>
+                            </li>
+                            <li>
+                                <a class="footer-item" href="#!">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__heading">Head Office</h3>
+                        <p class="footer__address">
+                            Xilliams Corner Wine © 2017. 1112 A Market St # Ste
+                            B22, Charlottesville, CA 45565
+                        </p>
+                        <h3 class="footer__heading">News letter</h3>
+                        <form action="" class="footer-form">
+                            <input
+                                class="footer-form__input"
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Email address..."
+                            />
+                            <button type="submit" class="btn footer-form__btn">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <p class="contact__email">email@gmail.com</p>
+                    <p class="contact__phone">(123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright__desc">
+                    © 2020 Ligft Media All rights reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
